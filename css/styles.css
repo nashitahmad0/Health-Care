@@ -1,0 +1,378 @@
+ html{
+     scroll-behavior: smooth;
+ }
+ 
+ /**header start*/
+ .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+  }
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  /*header end*/
+
+  /*Navigation bar start*/
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  .btn:hover{
+    background-color: #0056b3;
+  }
+  /* navigation bar end*/
+
+  /*about start*/
+  .about{
+    height: 100;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+.view-more-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; 
+  display: inline-block;
+  text-align: center;
+}
+.view-more-btn:hover {
+  background-color: #45a049; 
+}
+/*about end*/
+
+/* why choose us */
+.carding{
+  background-color: #bfddf880;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.card {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.logo {
+
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+h2 {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  color: #333;
+  transition: color 0.3s ease;
+}
+h2:hover {
+  color: #ff6600;
+}
+/*Why choose us*/
+
+/*services start*/
+section{
+  background-image: url(/images/bgimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+section h2{
+  text-align: center;
+  color: #135b24 ;
+  text-decoration: underline;
+  padding: 20px;
+}
+.servicecontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 190px);
+  grid-gap: 35px; 
+  margin: auto;
+  justify-content: center;
+  padding: 20px;
+}
+.servicecard {
+  background-color: #28a745;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+.servicecard:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+}
+.servicecard-header {
+  background-color: #28b949ed;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+.servicecard-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.servicecard-text {
+  color: #f8f9fa;
+}
+
+
+/*services end*/
+
+/*Testimonial start*/
+#testi{
+  background-color: #588b94;
+  padding: 20px;
+  
+}
+.testicontainer {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #225058;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.testicontainer h2{
+  color: palegreen;
+  text-decoration: none;
+}
+.testimonial {
+    color: #f4f4f4;
+  display: none;
+  padding: 20px;
+}
+.testimonial.active {
+  display: block;
+}
+.rating {
+  color: #FFD700; /* Set star color to gold */
+  font-size: 24px;
+}
+
+/*Testimonial End*/
+
+/*contact us start*/
+
+.reachhead{
+  background-color: #232931;
+  padding: 10px;
+  text-align: center ;
+ 
+  
+}
+h3{
+  font-size: 1.8rem;
+  color: floralwhite;
+}
+
+h2{
+  color: rgb(9, 47, 58);
+}
+.reach-out-section {
+  background-color: #232931;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 40px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: wheat;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.address {
+  flex: 1;
+  padding: 20px;
+}
+
+.address h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: wheat;
+}
+
+.address p {
+  margin-bottom: 10px;
+  text-align: center;
+  color: wheat;
+}
+
+.map {
+  height: 300px;
+  padding: 20px;
+}
+
+/*contact us end*/
+  
+  /* footer start*/
+
+  .footer {
+    background-color: #232931;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /*footer end*/
+
+
+  /***Responsive */
+
+  
+/* Header and Navigation Responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* About Section Responsive */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 10px;
+  }
+
+  .view-more-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Why Choose Us Section Responsive */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+}
+
+  /* Service Responsive */
+@media screen and (max-width: 768px) {
+  .servicecontainer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .servicecontainer {
+    grid-template-columns: repeat(1, 1fr); /* Single column for extra small screens */
+  }
+}
+
+/*Testimonial responsive*/
+@media (max-width: 768px) {
+  .testicontainer {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .testimonial {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testicontainer {
+    padding: 5px;
+  }
+
+  .testimonial {
+    padding: 5px;
+  }
+
+  .rating {
+    font-size: 20px;
+  }
+}
+
+/*reach us */
+@media only screen and (max-width: 768px) {
+  .contact-form,
+  .address {
+      flex: 1 100%;
+      padding: 20px;
+  }
+  .contact-form textarea {
+      width: 80%;
+  }
+}
+
+/* Footer Responsive */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+}

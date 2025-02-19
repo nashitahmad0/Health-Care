@@ -1,0 +1,126 @@
+html{
+     scroll-behavior: smooth;
+ }
+
+ 
+ /**header start*/
+ .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+  }
+  
+
+  .logo {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Adjust spacing as needed */
+
+  }
+
+  /*header end*/
+
+
+  /*Navigation bar start*/
+  nav{
+    text-align: center;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    /* Increase font size for the brand name */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    /* Increase font size for nav links */
+  }
+  
+ 
+
+  /* navigation bar end*/
+.instruction{
+  background-image: linear-gradient(white, lightblue, lightgreen  );
+}
+h3{
+  color: brown;
+  text-align: center;
+}
+
+/*checkbox start*/
+  #checkbox-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#checkbox-label {
+    font-size: 14px;
+}
+
+#error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.text-center{
+  padding: 10px;
+}
+
+  /* footer start*/
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /*footer end*/
+
+  
+ /* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .instruction {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .instruction {
+    padding: 15px;
+  }
+}

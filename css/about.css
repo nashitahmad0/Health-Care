@@ -1,0 +1,74 @@
+/**header start*/
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+
+.logo {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Adjust spacing as needed */
+
+}
+
+/*header end*/
+
+
+
+/*Navigation bar start*/
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .btn:hover{
+    background-color: #0056b3;
+  }
+/* navigation bar end*/
+
+.about-section {
+
+    padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-sec {
+    text-align: center;
+    font-size: x-large;
+    margin: auto;
+    padding: 5px;
+}
+
+.about-section h2 {
+   
+    color: #519b3e;
+    font-size:xx-large;
+    margin-right: 40px;
+}
+
+.about-section p {
+   padding: 0 80px 0;
+    margin-right: 40px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

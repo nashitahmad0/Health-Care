@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/booking_instruction.css">
+  <link rel="icon" type="images/jpg" sizes="64x64" href="images/logo.jpg">
+
+  <title>Health Care</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="header-container">
+      <img class="logo" src="images/logo.jpg" alt="Health Care Logo">
+      <i>
+        <h1>Health Care</h1>
+      </i>
+      <p><b>Swasthya ka Saathi, Aapke Har Kadam Mein</b></p>
+  </header>
+  <!-- nav bar starting -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active  mr-4">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active mr-4">
+          <a class="nav-link" href="about-us.html">About </a>
+        </li>
+        <li class="nav-item active mr-4">
+          <a class="nav-link " href="healthcamp.html">Health Camp</a>
+        </li>
+
+         <!-- If need in future just uncomment and link this  -->
+        <!-- <li class="nav-item active mr-4">
+          <a class="nav-link " href="medicine/index.html" target="_blank">Medicine</a>
+        </li> -->
+        <li class="nav-item active mr-4">
+          <a class="nav-link" href="bloodbank.html">Blood Bank</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto mr-4">
+        <button type="button" class="btn btn-danger"> <a style="color: white;" href="./User Dashboard/login.php"><span
+              class="glyphicon glyphicon-user"></span> Login</a></button>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav bar Ending -->
+  <section class="instruction">
+    <h3>General Instructions to be followed before booking / Registering.<br>(First Time To Health Care) </h3>
+    <ol>
+      <li>Please enter original data as it is a legal document / Enter as per your valid ID Proof.<br>
+        कृपया मूल जानकारी (डाटा )दर्ज करें क्यों कि ये कानूनी दस्तावेज हैI आपके वैध पहचान पत्र के अनुसार दर्ज करें ।
+      </li>
+      <li> Kindly use the same registration number for every time you book an appointment. Don't make another new
+        registration. <br>
+        कृपया हर बार अपॉइंटमेंट बुक करते समय उसी पंजीकरण संख्या का उपयोग करें। दूसरा नया रजिस्ट्रेशन न करें</li>
+      <li>Year of birth is very very important to book repeat appointment. So keep it confidentially to avoid
+        misuse.<br>
+        दुबारा नियुक्ति (बुकिंग ) करने के लिए जन्म का वर्ष बहुत -बहुत अनिवार्य है,इसलिए इसके दुरुपयोग से बचने के लिए इसे
+        गोपनीय रखें ।</li>
+      <li>Collect your Registration Card from Reception or any hospitals by showing the registration number. Show it to
+        any services your are taking if it is needed.<br>
+        पंजीकरण संख्या दिखाकर रिसेप्शन या किसी अस्पताल से अपना पंजीकरण कार्ड प्राप्त करें। यदि आवश्यक हो तो इसे अपनी
+        किसी भी सेवा में दिखाएं।</li>
+      <li>If your doctor is on unavoidable emergency leave on the day of your appointment, you will be seen by another
+        doctor.<br>
+        यदि आपका डॉक्टर आपकी नियुक्ति (अपायमेन्ट) के दिन अनिवार्य आपातकालीन छुट्टी पर है, तो आपको अन्य डॉक्टर द्वारा
+        देखा जाएगा।</li>
+      <li>After Registration Please bring your Aadhar to verify the registration number belongs to you <br>
+        पंजीकरण के बाद कृपया यह सत्यापित करने के लिए अपना आधार लाएँ कि पंजीकरण संख्या आपकी है
+      </li>
+      <li>After booking your appointment, check your email for confirmation and any additional instructions provided by
+        Heath Care. <br>
+        अपनी अपॉइंटमेंट बुक करने के बाद, पुष्टि और सीएमसी द्वारा दिए गए किसी भी अतिरिक्त निर्देश के लिए अपना ईमेल
+        जांचें।</li>
+
+    </ol>
+
+    <div id="checkbox-container">
+      <input type="checkbox" id="agree-checkbox">
+      <label for="agree-checkbox" id="checkbox-label">I HAVE READ AND AGREED TO THE TERMS AND CONDITIONS</label>
+      <div id="error-message">Kindly tick the agree to proceed further.</div>
+    </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary"  id="next-btn" onclick="checkAgreement()"> Next Page</button>
+  </div>
+  </section>
+
+
+
+
+  <script>
+    function checkAgreement() {
+      var checkbox = document.getElementById("agree-checkbox");
+      var errorMessage = document.getElementById("error-message");
+
+      if (!checkbox.checked) {
+        errorMessage.style.display = "block";
+      } else {
+        errorMessage.style.display = "none";
+        window.location.href = "./registration/patient_registration.php";
+      }
+    }
+  </script>
+
+
+
+  <!-- footer start-->
+  <footer class="footer">
+    &copy; 2025 Health Care. All rights reserved.
+  </footer>
+  <!-- footer end-->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="script.js"></script>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

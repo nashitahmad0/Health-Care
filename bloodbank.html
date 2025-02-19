@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/bloodbank.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Blood Bank - Health Care </title>
+  
+</head>
+<body>
+  <header>
+
+    <div class="header-container">
+      <img class="logo" src="images/logo.jpg" alt="Health Care Logo">
+      <i>
+        <h1>Health Care</h1>
+      </i>
+      <p><b>Swasthya ka Saathi, Aapke Har Kadam Mein</b></p>
+  </header>
+  <!-- nav bar starting -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">Health Care</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active  mr-4">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active mr-4">
+          <a class="nav-link" href="index.html#about">About </a>
+        </li>
+        <li class="nav-item active mr-4">
+          <a class="nav-link " href="healthcamp.html">Health Camp</a>
+        </li>
+
+         <!-- If need in future just uncomment and link this  -->
+        <!-- <li class="nav-item active mr-4">
+          <a class="nav-link " href="medicine/index.html" target="_blank">Medicine</a>
+        </li> -->
+        <li class="nav-item active mr-4">
+          <a class="nav-link" href="bloodbank.html">Blood Bank</a>
+        </li>
+        <li class="nav-item active mr-4">
+          <a class="nav-link " href="index.html#reachus">Contact Us</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <!-- nav bar Ending -->
+
+
+<div class="container">
+  <!-- Content Area -->
+  <h1>Blood Bank</h1>
+  
+  <div class="blood-bank-info">
+    <h2>Available Blood Types</h2>
+    <table class="blood-table">
+      <thead>
+        <tr>
+          <th>Blood Type</th>
+          <th>Quantity (in units)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A+</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>AB+</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>O+</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>A-</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>B-</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>AB-</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>O-</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="last-updated">Last Updated: April 16, 2024</p>
+    <a href="#" class="booking-button" onclick="openBookingModal()">Book Blood</a>
+  </div>
+
+  <div class="blood-bank-link">
+    <h3>Other Blood Banks for Reference:</h3>
+    <ul>
+      <li><a href="#">RIMS Ranchi</a></li>
+      <li><a href="#">Sadar Hospital</a></li>
+      <li><a href="#">Jharkhand Blood Bank</a></li>
+      <li><a href="#">Health Care</a></li>
+    
+    </ul>
+  </div>
+
+  <!-- Blood Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBookingModal()">&times;</span>
+      <h2>Book Blood</h2>
+      <form class="booking-form" action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="bloodType">Blood Type:</label>
+        <select id="bloodType" name="bloodType" required>
+          <option value="A+">A+</option>
+          <option value="B+">B+</option>
+          <option value="AB+">AB+</option>
+          <option value="O+">O+</option>
+          <option value="A-">A-</option>
+          <option value="B-">B-</option>
+          <option value="AB-">AB-</option>
+          <option value="O-">O-</option>
+        </select><br>
+
+        <label for="quantity">Quantity (in units):</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <!--<p>&copy; 2024 Health Care Hospital. All Rights Reserved.</p>-->
+</div>
+<!-- footer start-->
+<footer class="footer">
+  &copy; 2025 Health Care. All rights reserved.
+</footer>
+<!-- footer end-->
+
+
+
+
+
+
+<script>
+  // Function to open the booking modal
+  function openBookingModal() {
+    var modal = document.getElementById("bookingModal");
+    modal.style.display = "block";
+  }
+
+  // Function to close the booking modal
+  function closeBookingModal() {
+    var modal = document.getElementById("bookingModal");
+    modal.style.display = "none";
+  }
+
+  // Close the modal if user clicks outside of it
+  window.onclick = function(event) {
+    var modal = document.getElementById("bookingModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
